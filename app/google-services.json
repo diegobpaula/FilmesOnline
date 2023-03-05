@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "401005775590",
+    "project_id": "aplicativo-de-filmes-af187",
+    "storage_bucket": "aplicativo-de-filmes-af187.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401005775590:android:e54e22b48ecd8f56300927",
+        "android_client_info": {
+          "package_name": "com.diegobpaula.appfilmes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401005775590-8llo05mqigncs2r8qbrau67sh69jvt5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChbKZytHoUwXto_lNySBl6-T_n0QJMhLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401005775590-8llo05mqigncs2r8qbrau67sh69jvt5g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
