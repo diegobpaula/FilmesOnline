@@ -1,10 +1,20 @@
 package com.diegobpaula.appfilmes.model
 
+import com.google.gson.annotations.SerializedName
+
 data class Categoria(
-    val titulo: String? = null,
-    val filmes: MutableList<Filme> = mutableListOf()
+    @SerializedName("titulo") val titulo: String? = null,
+    @SerializedName("capas") val filmes: MutableList<Filme> = mutableListOf()
 )
 
 data class Filme(
-    val capa: Int? = null,
+    @SerializedName("url_imagem") val capa: String? = null,
+    @SerializedName("id") val id:Int = 0,
+    val nome: String? = null,
+    val descricao: String? = null,
+    val elenco: String? = null
+)
+
+data class Categorias(@SerializedName("categoria")
+    val categorias: MutableList<Categoria> = mutableListOf()
 )

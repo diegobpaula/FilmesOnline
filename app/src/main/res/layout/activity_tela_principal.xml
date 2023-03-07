@@ -70,10 +70,43 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/dark_gray"
-        app:layout_constraintTop_toBottomOf="@id/containerHeader"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerHeader" />
+
+    <View
+        android:id="@+id/containerProgressBar"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/red"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/containerProgressBar"
+        app:layout_constraintEnd_toEndOf="@id/containerProgressBar"
+        app:layout_constraintStart_toStartOf="@id/containerProgressBar"
+        app:layout_constraintTop_toTopOf="@id/containerProgressBar" />
+
+    <TextView
+        android:id="@+id/txtCarregando"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carregando..."
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        app:layout_constraintStart_toStartOf="@id/containerProgressBar"
+        app:layout_constraintEnd_toEndOf="@id/containerProgressBar"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

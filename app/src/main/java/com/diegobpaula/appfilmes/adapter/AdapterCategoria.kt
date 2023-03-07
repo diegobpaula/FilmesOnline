@@ -7,10 +7,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.diegobpaula.appfilmes.databinding.CategoriaItemBinding
 import com.diegobpaula.appfilmes.model.Categoria
+import com.diegobpaula.appfilmes.model.Filme
 
 class AdapterCategoria(
     private val context: Context,
-    private val listaCategorias: MutableList<Categoria>
+    val listaCategorias: MutableList<Categoria>
 ) :
     RecyclerView.Adapter<AdapterCategoria.CategoriaViewHolder>() {
 
